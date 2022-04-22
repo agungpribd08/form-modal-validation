@@ -10,10 +10,10 @@ function App() {
   }
 
   return (
-    <div>
+    <React.Fragment>
       <AddUser onSaveData={saveDataHandler} />
       {userData.length > 0 ? <UserList users={userData} /> : null}
-    </div>
+    </React.Fragment>
   )
 }
 
